@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Meridian Gallery — a heist game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070a14; height: 100%; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    width: min(96vw, 960px); height: auto;
+    image-rendering: auto; background: #16213a;
+    box-shadow: 0 0 60px rgba(245, 197, 66, 0.12);
+  }
+  #help { color: #8fa3c8; font-size: 13px; margin-top: 10px; }
+  #help b { color: #f5c542; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="help"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>click</b> walk there &nbsp;·&nbsp; <b>Q</b> smoke &nbsp;·&nbsp; <b>E</b> EMP &nbsp;·&nbsp; <b>R</b> restart &nbsp;·&nbsp; <b>M</b> mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
